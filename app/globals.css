@@ -2,32 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@keyframes slide {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-8rem); }
+    50% { transform: translateY(-16rem); }
+    75% { transform: translateY(-24rem); }
+    100% { transform: translateY(0); }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@media (max-width: 600px) {
+    @keyframes slide {
+        0% { transform: translateY(0); }
+        25% { transform: translateY(-2.125rem); }
+        50% { transform: translateY(-4.25rem); }
+        75% { transform: translateY(-6.375rem); }
+        100% { transform: translateY(0); }
+    }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.animate-slide {
+    animation: slide 8s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
 }
