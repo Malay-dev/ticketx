@@ -23,12 +23,12 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const nav_items = [
-    "Product",
-    "Features",
-    "About",
-    "Documentation",
-    "Pricing",
-    "Contact",
+    { name: "Product", route: "/product" },
+    { name: "Features", route: "#features" },
+    { name: "About", route: "/about" },
+    { name: "Documentation", route: "/documentation" },
+    { name: "Pricing", route: "/pricing" },
+    { name: "Contact", route: "/contact" },
   ];
 
   return (
@@ -54,9 +54,11 @@ export default function NavBar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <span className={`text-3xl ${darker_grotesque.className}`}>
+          <span className={`lg:text-3xl ${darker_grotesque.className}`}>
             Ticket
-            <span className={` text-4xl ${darker_grotesque.className}`}>X</span>
+            <span className={`lg:text-4xl ${darker_grotesque.className}`}>
+              X
+            </span>
           </span>
         </NavbarBrand>
       </NavbarContent>
@@ -66,23 +68,23 @@ export default function NavBar() {
         justify="center">
         {nav_items.map((item, index) => (
           <NavbarItem key={`${item}-${index}`} className="text-2xl">
-            <Link color="foreground" href="#" className="text-xl">
-              {item}
+            <Link color="foreground" href={item.route} className="text-xl">
+              {item.name}
             </Link>
           </NavbarItem>
         ))}
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem>
           <Button
             as={Link}
-            className={`${darker_grotesque.className} rounded-full text-xl  text-center align-text-top px-16 py-2`}
+            className={`${darker_grotesque.className} rounded-full  text-lg lg:text-xl  text-center align-text-top lg:px-16 py-2`}
             href="#"
             variant="bordered">
             Log in
           </Button>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="hidden lg:flex">
           <Button
             as={Link}
             className={`${darker_grotesque.className} rounded-full text-xl bg-black text-white text-center align-text-top px-10 py-2`}
