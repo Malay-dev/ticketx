@@ -1,6 +1,6 @@
 import Home from "@/components/Home";
 import Features from "@/components/Features";
-
+import Pricing from "@/components/Pricing";
 export default function Page() {
   return (
     <main
@@ -8,6 +8,7 @@ export default function Page() {
       suppressHydrationWarning>
       <Home></Home>
       <Features></Features>
+      <Pricing></Pricing>
     </main>
   );
 }

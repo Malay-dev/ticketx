@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button, Link } from "@nextui-org/react";
 import { Darker_Grotesque } from "next/font/google";
 import GoalCard from "@/components/GoalCard";
+import WordRotate from "./WordRotate";
 const darker_grotesque = Darker_Grotesque({
   weight: "900",
   style: "normal",
@@ -13,12 +14,15 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-between gap-5">
-        <div className="flex mt-10 overflow-hidden h-[3rem] lg:h-[9.5rem]">
+        <div className="flex mt-10 w-full  lg:h-[9.5rem]">
           <h1
             className={`text-4xl lg:text-9xl font-bold ${darker_grotesque.className}`}>
             TicketX
           </h1>
-          <span
+          <WordRotate
+            words={["Agency", "Startup", "SAAS", "WebApp"]}
+            className={`text-4xl lg:text-9xl font-bold ${darker_grotesque.className}`}></WordRotate>
+          {/* <span
             direction="up"
             behavior="scroll"
             className="animate-slide h-[2.25rem] lg:h-[8rem]">
@@ -38,7 +42,7 @@ const Home = () => {
               className={`text-4xl lg:text-9xl font-bold ${darker_grotesque.className}`}>
               WebApp
             </h1>
-          </span>
+          </span> */}
         </div>
         <div>
           <p
