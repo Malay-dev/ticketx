@@ -26,8 +26,8 @@ export default function NavBar() {
     { name: "Product", route: "/product" },
     { name: "Features", route: "#features" },
     { name: "About", route: "/about" },
+    { name: "Pricing", route: "#pricing" },
     { name: "Documentation", route: "/documentation" },
-    { name: "Pricing", route: "/pricing" },
     { name: "Contact", route: "/contact" },
   ];
 
