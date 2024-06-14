@@ -9,7 +9,7 @@ body{
 @keyframes slide {
     0% { transform: translateY(0); }
     25% { transform: translateY(-8rem); }
-    50% { transform: translateY(-16rem); }
+    50% { transform: translateY(-16rem); }ss
     75% { transform: translateY(-24rem); }
     100% { transform: translateY(0); }
 }

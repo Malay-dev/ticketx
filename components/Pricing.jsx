@@ -19,21 +19,24 @@ const darker_grotesque_semibold = Darker_Grotesque({
 });
 const Pricing = () => {
   return (
-    <div id="pricing">
+    <div id="pricing" className="px-4 py-10">
       <div className="flex items-center justify-center">
         <h1
-          className={`mt-10 text-4xl lg:text-9xl font-bold ${darker_grotesque.className}`}>
+          className={`mt-10 text-4xl lg:text-7xl xl:text-9xl font-bold ${darker_grotesque.className}`}>
           Usage Based Pricing
         </h1>
       </div>
       <div className="flex items-center justify-center mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Card className="bg-white p-5 rounded-3xl shadow w-96 h-full flex flex-col">
+          <Card className="bg-white p-5 rounded-3xl shadow w-full max-w-xs md:max-w-sm lg:max-w-md flex flex-col">
             <CardHeader className="flex flex-col items-start">
               <p className={`${darker_grotesque_semibold.className} text-lg`}>
                 Starter
               </p>
-              <h1 className={`${darker_grotesque.className} text-8xl`}>Free</h1>
+              <h1
+                className={`${darker_grotesque.className} text-6xl lg:text-8xl`}>
+                Free
+              </h1>
             </CardHeader>
             <CardBody>
               <p className={`${darker_grotesque_light.className} text-xl`}>
@@ -85,12 +88,13 @@ const Pricing = () => {
               </Button>
             </CardBody>
           </Card>
-          <Card className="bg-white p-5 rounded-3xl shadow w-96 h-full flex flex-col">
+          <Card className="bg-white p-5 rounded-3xl shadow w-full max-w-xs md:max-w-sm lg:max-w-md flex flex-col">
             <CardHeader className="flex flex-col items-start">
               <p className={`${darker_grotesque_semibold.className} text-lg`}>
                 Pro
               </p>
-              <h1 className={`${darker_grotesque.className} text-8xl`}>
+              <h1
+                className={`${darker_grotesque.className} text-6xl lg:text-8xl`}>
                 ₹1200
                 <span
                   className={`${darker_grotesque_light.className} text-gray-600 text-xl`}>
@@ -148,12 +152,13 @@ const Pricing = () => {
               </Button>
             </CardBody>
           </Card>
-          <Card className="bg-white p-5 rounded-3xl shadow w-96 h-full flex flex-col">
+          <Card className="bg-white p-5 rounded-3xl shadow w-full max-w-xs md:max-w-sm lg:max-w-md flex flex-col">
             <CardHeader className="flex flex-col items-start">
               <p className={`${darker_grotesque_semibold.className} text-lg`}>
                 Enterprise
               </p>
-              <h1 className={`${darker_grotesque.className} text-8xl`}>
+              <h1
+                className={`${darker_grotesque.className} text-6xl lg:text-8xl`}>
                 ₹4000
                 <span
                   className={`${darker_grotesque_light.className} text-gray-600 text-xl`}>

@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, CardHeader, CardBody, Image, Button } from "@nextui-org/react";
-
+import { Card, CardHeader, Image } from "@nextui-org/react";
 import { Darker_Grotesque } from "next/font/google";
+import MobileFeatures from "./MobileFeatures";
 
 const darker_grotesque = Darker_Grotesque({
   weight: "900",
@@ -13,6 +13,51 @@ const darker_grotesque_light = Darker_Grotesque({
   style: "normal",
   subsets: ["latin"],
 });
+
+const featuresData = [
+  {
+    title: "Real-time Data",
+    description: "Instant updates for smart, quick decisions for your business",
+    imageSrc: "/images/real-time.png",
+    altText: "clock",
+  },
+  {
+    title: "Integration",
+    description:
+      "TicketX provides easy and smooth integration to various platforms - WebApp, App, etc.",
+    imageSrc: "/images/integration.png",
+    altText: "integration",
+  },
+  {
+    title: "Tailored Reports",
+    description:
+      "Make custom reports with your key data to provide better customer support.",
+    imageSrc: "/images/tailored-reports.png",
+    altText: "tailored-reports",
+  },
+  {
+    title: "Mobile friendly",
+    description:
+      "Manage your dashboard on the go, stay in control from anywhere.",
+    imageSrc: "/images/mobile-friendly.png",
+    altText: "mobile-friendly",
+  },
+  {
+    title: "Dedicated Support",
+    description:
+      "Our team is available 24x7 to help you get the best out of TicketX.",
+    imageSrc: "/images/dedicated-support.png",
+    altText: "dedicated-support",
+  },
+  {
+    title: "Security",
+    description:
+      "TicketX ensures top-tier security of your data for your business.",
+    imageSrc: "/images/security.png",
+    altText: "Security",
+  },
+];
+
 const Features = () => {
   return (
     <div id="features">
@@ -22,109 +67,32 @@ const Features = () => {
           Features & Benefits
         </h1>
       </div>
-      <div className="flex items-center justify-center mt-10">
+      <div className="md:hidden">
+        <MobileFeatures data={featuresData} />
+      </div>
+      <div className="hidden md:flex items-center justify-center mt-10">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          <Card className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 lg:w-96 lg:h-60">
-            <CardHeader className="flex flex-col items-center justify-center">
-              <Image
-                src="/images/real-time.png"
-                width={80}
-                height={80}
-                alt="clock"></Image>
-              <h4 className={`${darker_grotesque.className} text-3xl`}>
-                Real-time Data
-              </h4>
-            </CardHeader>
-            <div
-              className={`${darker_grotesque_light.className} text-xl text-center`}>
-              Instant updates for smart,<br></br>quick decisions for your
-              business
-            </div>
-          </Card>
-          <Card className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 lg:w-96 lg:h-60">
-            <CardHeader className="flex flex-col items-center justify-center">
-              <Image
-                src="/images/integration.png"
-                width={80}
-                height={80}
-                alt="integration"></Image>
-              <h4 className={`${darker_grotesque.className} text-3xl`}>
-                Integration
-              </h4>
-            </CardHeader>
-            <div
-              className={`${darker_grotesque_light.className} text-xl text-center`}>
-              TicketX provides easy and smooth integration to various platforms
-              - WebApp, App, etc.
-            </div>
-          </Card>
-          <Card className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 lg:w-96 lg:h-60">
-            <CardHeader className="flex flex-col items-center justify-center">
-              <Image
-                src="/images/tailored-reports.png"
-                width={80}
-                height={80}
-                alt="tailored-reports"></Image>
-              <h4 className={`${darker_grotesque.className} text-3xl`}>
-                Tailored Reports
-              </h4>
-            </CardHeader>
-            <div
-              className={`${darker_grotesque_light.className} text-xl text-center`}>
-              Make custom reports with your key data to provide better customer
-              support.
-            </div>
-          </Card>
-          <Card className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 lg:w-96 lg:h-60">
-            <CardHeader className="flex flex-col items-center justify-center">
-              <Image
-                src="/images/mobile-friendly.png"
-                width={80}
-                height={80}
-                alt="mobile-friendly"></Image>
-              <h4 className={`${darker_grotesque.className} text-3xl`}>
-                Mobile friendly
-              </h4>
-            </CardHeader>
-            <div
-              className={`${darker_grotesque_light.className} text-xl text-center`}>
-              Manage your dashboard on the go, stay in control from anywhere.
-            </div>
-          </Card>
-          <Card className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 lg:w-96 lg:h-60">
-            <CardHeader className="flex flex-col items-center justify-center">
-              <Image
-                src="/images/dedicated-support.png"
-                width={80}
-                height={80}
-                alt="dedicated-support"></Image>
-              <h4 className={`${darker_grotesque.className} text-3xl`}>
-                Dedicated Support
-              </h4>
-            </CardHeader>
-            <div
-              className={`${darker_grotesque_light.className} text-xl text-center`}>
-              Our team is available 24x7 to help you get the best out of
-              TicketX.
-            </div>
-          </Card>
-          <Card className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 lg:w-96 lg:h-60">
-            <CardHeader className="flex flex-col items-center justify-center">
-              <Image
-                src="/images/security.png"
-                width={80}
-                height={80}
-                alt="Security"></Image>
-              <h4 className={`${darker_grotesque.className} text-3xl`}>
-                Security
-              </h4>
-            </CardHeader>
-            <div
-              className={`${darker_grotesque_light.className} text-xl text-center`}>
-              TicketX ensures top - tier security of your data for your
-              business.
-            </div>
-          </Card>
+          {featuresData.map((feature, index) => (
+            <Card
+              key={index}
+              className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 lg:w-96 lg:h-60">
+              <CardHeader className="flex flex-col items-center justify-center">
+                <Image
+                  src={feature.imageSrc}
+                  width={80}
+                  height={80}
+                  alt={feature.altText}
+                />
+                <h4 className={`${darker_grotesque.className} text-3xl`}>
+                  {feature.title}
+                </h4>
+              </CardHeader>
+              <div
+                className={`${darker_grotesque_light.className} text-xl text-center`}>
+                {feature.description}
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </div>

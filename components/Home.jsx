@@ -14,14 +14,16 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-between gap-5">
-        <div className="flex mt-10 w-full  lg:h-[9.5rem]">
+        <div className="flex mt-10  items-center justify-center lg:h-[9.5rem]">
           <h1
-            className={`text-4xl lg:text-9xl font-bold ${darker_grotesque.className}`}>
+            className={`text-[2.5rem] lg:text-9xl font-bold ${darker_grotesque.className}`}>
             TicketX
           </h1>
-          <WordRotate
-            words={["Agency", "Startup", "SAAS", "WebApp"]}
-            className={`text-4xl lg:text-9xl font-bold ${darker_grotesque.className}`}></WordRotate>
+          <div className="flex-shrink-0 md:w-[28rem]">
+            <WordRotate
+              words={["Agency", "Startup", "SAAS", "WebApp"]}
+              className={`text-[2.5rem] lg:text-9xl font-bold ${darker_grotesque.className}`}></WordRotate>
+          </div>
           {/* <span
             direction="up"
             behavior="scroll"

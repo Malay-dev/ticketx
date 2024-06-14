@@ -24,7 +24,7 @@ const Contact = () => {
     <div id="contact">
       <div className="flex flex-col gap-10 items-center justify-center">
         <h1
-          className={`mt-10 text-4xl lg:text-9xl font-bold ${darker_grotesque.className}`}>
+          className={`mt-10 text-3xl lg:text-9xl font-bold ${darker_grotesque.className}`}>
           Boost your Experience
         </h1>
         <p

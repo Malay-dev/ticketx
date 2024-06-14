@@ -63,7 +63,7 @@ const Footer = () => {
           </span>
         </div>
         <div
-          className={`${darker_grotesque_light.className} grid grid-cols-3 gap-4 p-4 w-2/3 text-lg`}>
+          className={`${darker_grotesque_light.className} hidden md:grid grid-cols-3 gap-4 p-4 w-2/3 text-lg`}>
           <div className="p-6 text-left">
             <h1 className="text-gray-600">How it works</h1>
             <ul className="mt-2">
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className={`${darker_grotesque_light.className} flex items-center justify-between`}>
+        className={`${darker_grotesque_light.className} hidden md:flex items-center justify-between`}>
         <span className="flex space-x-3">
           <Avatar size="sm" src="/images/facebook.png"></Avatar>
           <Avatar size="sm" src="/images/instagram.png"></Avatar>
@@ -104,6 +104,21 @@ const Footer = () => {
           <Link href={"#"}>Security</Link>
           <Link href={"#"}>Terms of Service</Link>
         </span>
+      </div>
+      <div
+        className={`${darker_grotesque_light.className} md:hidden flex flex-col items-center justify-center gap-2`}>
+        <span className="flex space-x-3">
+          <Avatar size="sm" src="/images/facebook.png"></Avatar>
+          <Avatar size="sm" src="/images/instagram.png"></Avatar>
+          <Avatar size="sm" src="/images/twitter.png"></Avatar>
+          <Avatar size="sm" src="/images/linkedin.png"></Avatar>
+        </span>
+        <span className="space-x-3">
+          <Link href={"#"}>Privacy Policy</Link>
+          <Link href={"#"}>Security</Link>
+          <Link href={"#"}>Terms of Service</Link>
+        </span>
+        <span>@2023-24 Maken. All rights reserved</span>
       </div>
     </footer>
   );
