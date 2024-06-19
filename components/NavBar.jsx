@@ -54,9 +54,11 @@ export default function NavBar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <span className={`md:text-2xl lg:text-3xl ${darker_grotesque.className}`}>
+          <span
+            className={`md:text-2xl lg:text-3xl ${darker_grotesque.className}`}>
             Ticket
-            <span className={`md:text-3xl lg:text-4xl ${darker_grotesque.className}`}>
+            <span
+              className={`md:text-3xl lg:text-4xl ${darker_grotesque.className}`}>
               X
             </span>
           </span>
@@ -68,7 +70,10 @@ export default function NavBar() {
         justify="center">
         {nav_items.map((item, index) => (
           <NavbarItem key={`${item}-${index}`} className="text-2xl">
-            <Link color="foreground" href={item.route} className="text-lg xl:text-xl">
+            <Link
+              color="foreground"
+              href={item.route}
+              className="text-lg xl:text-xl">
               {item.name}
             </Link>
           </NavbarItem>
@@ -107,9 +112,9 @@ export default function NavBar() {
                   ? "danger"
                   : "foreground"
               }
-              href="#"
+              href={item.route}
               size="lg">
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
