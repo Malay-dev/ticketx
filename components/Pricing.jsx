@@ -19,22 +19,22 @@ const darker_grotesque_semibold = Darker_Grotesque({
 });
 const Pricing = () => {
   return (
-    <div id="pricing" className="px-4 py-10">
+    <div id="pricing" className="md:px-4 py-10">
       <div className="flex items-center justify-center">
         <h1
           className={`mt-10 text-4xl lg:text-7xl xl:text-9xl font-bold ${darker_grotesque.className}`}>
           Usage Based Pricing
         </h1>
       </div>
-      <div className="flex items-center justify-center mt-10">
+      <div className="flex items-center justify-center mt-5 md:mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Card className="bg-white p-5 rounded-3xl shadow w-full max-w-xs md:max-w-sm lg:max-w-md flex flex-col">
+          <Card className="bg-white p-5 rounded-3xl shadow w-full  md:max-w-sm lg:max-w-md flex flex-col">
             <CardHeader className="flex flex-col items-start">
               <p className={`${darker_grotesque_semibold.className} text-lg`}>
                 Starter
               </p>
               <h1
-                className={`${darker_grotesque.className} text-6xl lg:text-8xl`}>
+                className={`${darker_grotesque.className} text-6xl lg:text-7xl xl:text-8xl`}>
                 Free
               </h1>
             </CardHeader>
@@ -43,10 +43,10 @@ const Pricing = () => {
                 Available Features
               </p>
               <ul
-                className={`${darker_grotesque_light.className} list-item ml-4 leading-10 text-xl`}>
+                className={`${darker_grotesque_light.className} list-item ml-4 leading-10 md:text-xl`}>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -58,7 +58,7 @@ const Pricing = () => {
                 </li>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -70,7 +70,7 @@ const Pricing = () => {
                 </li>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -94,7 +94,7 @@ const Pricing = () => {
                 Pro
               </p>
               <h1
-                className={`${darker_grotesque.className} text-6xl lg:text-8xl`}>
+                className={`${darker_grotesque.className} text-6xl lg:text-7xl xl:text-8xl`}>
                 ₹1200
                 <span
                   className={`${darker_grotesque_light.className} text-gray-600 text-xl`}>
@@ -107,10 +107,10 @@ const Pricing = () => {
                 Available Features
               </p>
               <ul
-                className={`${darker_grotesque_light.className} list-item ml-4 leading-10 text-xl`}>
+                className={`${darker_grotesque_light.className} list-item ml-4 leading-10 md:text-xl`}>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -122,7 +122,7 @@ const Pricing = () => {
                 </li>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -134,7 +134,7 @@ const Pricing = () => {
                 </li>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -158,7 +158,7 @@ const Pricing = () => {
                 Enterprise
               </p>
               <h1
-                className={`${darker_grotesque.className} text-6xl lg:text-8xl`}>
+                className={`${darker_grotesque.className} text-6xl lg:text-7xl xl:text-8xl`}>
                 ₹4000
                 <span
                   className={`${darker_grotesque_light.className} text-gray-600 text-xl`}>
@@ -171,10 +171,10 @@ const Pricing = () => {
                 Available Features
               </p>
               <ul
-                className={`${darker_grotesque_light.className} list-item ml-4 leading-10 text-xl`}>
+                className={`${darker_grotesque_light.className} list-item ml-4 leading-10 md:text-xl`}>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -186,7 +186,7 @@ const Pricing = () => {
                 </li>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -198,7 +198,7 @@ const Pricing = () => {
                 </li>
                 <li className="flex gap-2 items-center">
                   <svg
-                    className="bg-[#E4F0FF] rounded-full"
+                    className="bg-[#E4F0FF] rounded-full md:w-[24px] w-[18px]"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"

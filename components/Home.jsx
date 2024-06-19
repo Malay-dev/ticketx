@@ -14,15 +14,15 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-between gap-5">
-        <div className="flex mt-10  items-center justify-center lg:h-[9.5rem]">
+        <div className="flex   items-center justify-center lg:h-[9.5rem]">
           <h1
-            className={`text-[2.5rem] lg:text-9xl font-bold ${darker_grotesque.className}`}>
+            className={`text-[2.5rem] md:text-8xl lg:text-9xl font-bold ${darker_grotesque.className}`}>
             TicketX
           </h1>
-          <div className="flex-shrink-0 md:w-[28rem]">
+          <div className="flex-shrink-0 md:w-[21rem] lg:w-[28rem]">
             <WordRotate
               words={["Agency", "Startup", "SAAS", "WebApp"]}
-              className={`text-[2.5rem] lg:text-9xl font-bold ${darker_grotesque.className}`}></WordRotate>
+              className={`text-[2.5rem] md:text-8xl lg:text-9xl font-bold ${darker_grotesque.className}`}></WordRotate>
           </div>
           {/* <span
             direction="up"
@@ -48,7 +48,7 @@ const Home = () => {
         </div>
         <div>
           <p
-            className={`${darker_grotesque.className} text-xs lg:text-xl text-wrap text-center`}>
+            className={`${darker_grotesque.className} text-xs md:text-xl text-wrap text-center`}>
             Dive into your numbers, understand your customers, <br></br> and
             resolve their issues with TicketX
           </p>
@@ -64,9 +64,7 @@ const Home = () => {
         </div>
       </div>
       <div className="flex">
-        <div className="hidden lg:block">
-          <GoalCard></GoalCard>
-        </div>
+        {/* <div className="hidden lg:block"><GoalCard></GoalCard></div> */}
         <div>
           <Image
             src="/images/hero-stats.png" // Route of the image file
@@ -75,9 +73,7 @@ const Home = () => {
             alt="hero-stats-image"
           />
         </div>
-        <div className="hidden lg:block">
-          <GoalCard></GoalCard>
-        </div>
+        {/* <div className="hidden lg:block"><GoalCard></GoalCard></div> */}
       </div>
     </div>
   );

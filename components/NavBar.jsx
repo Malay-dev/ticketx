@@ -54,9 +54,9 @@ export default function NavBar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <span className={`lg:text-3xl ${darker_grotesque.className}`}>
+          <span className={`md:text-2xl lg:text-3xl ${darker_grotesque.className}`}>
             Ticket
-            <span className={`lg:text-4xl ${darker_grotesque.className}`}>
+            <span className={`md:text-3xl lg:text-4xl ${darker_grotesque.className}`}>
               X
             </span>
           </span>
@@ -64,11 +64,11 @@ export default function NavBar() {
       </NavbarContent>
 
       <NavbarContent
-        className={`hidden w-full sm:flex items-center justify-center gap-10 ${darker_grotesque.className}`}
+        className={`hidden w-full sm:flex items-center justify-center gap-6 xl:gap-10 ${darker_grotesque.className}`}
         justify="center">
         {nav_items.map((item, index) => (
           <NavbarItem key={`${item}-${index}`} className="text-2xl">
-            <Link color="foreground" href={item.route} className="text-xl">
+            <Link color="foreground" href={item.route} className="text-lg xl:text-xl">
               {item.name}
             </Link>
           </NavbarItem>
@@ -78,7 +78,7 @@ export default function NavBar() {
         <NavbarItem>
           <Button
             as={Link}
-            className={`${darker_grotesque.className} rounded-full  text-lg lg:text-xl  text-center align-text-top lg:px-16 py-2`}
+            className={`${darker_grotesque.className} rounded-full  text-lg lg:text-xl  text-center align-text-top lg:px-12 xl:px-16 py-2`}
             href="#"
             variant="bordered">
             Log in
@@ -87,7 +87,7 @@ export default function NavBar() {
         <NavbarItem className="hidden lg:flex">
           <Button
             as={Link}
-            className={`${darker_grotesque.className} rounded-full text-xl bg-black text-white text-center align-text-top px-10 py-2`}
+            className={`${darker_grotesque.className} rounded-full text-xl bg-black text-white text-center align-text-top lg:px-8 xl:px-10 py-2`}
             href="#"
             variant="solid">
             Try for free

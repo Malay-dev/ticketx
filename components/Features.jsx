@@ -63,11 +63,11 @@ const Features = () => {
     <div id="features">
       <div className="flex items-center justify-center">
         <h1
-          className={`mt-10 text-4xl lg:text-9xl font-bold ${darker_grotesque.className}`}>
+          className={`mt-10 text-3xl md:text-5xl lg:text-8xl xl:text-9xl  font-bold ${darker_grotesque.className}`}>
           Features & Benefits
         </h1>
       </div>
-      <div className="md:hidden">
+      <div className="mt-10 md:hidden">
         <MobileFeatures data={featuresData} />
       </div>
       <div className="hidden md:flex items-center justify-center mt-10">
@@ -75,15 +75,16 @@ const Features = () => {
           {featuresData.map((feature, index) => (
             <Card
               key={index}
-              className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 lg:w-96 lg:h-60">
+              className="bg-white p-3 lg:p-6 rounded-3xl shadow-sm border w-36 h-28 sm:w-48 sm:h-36 md:w-72 md:h-56 lg:w-72 lg:h-60 xl:w-96 xl:h-60">
               <CardHeader className="flex flex-col items-center justify-center">
                 <Image
                   src={feature.imageSrc}
-                  width={80}
-                  height={80}
+                  width={60}
+                  height={60}
                   alt={feature.altText}
                 />
-                <h4 className={`${darker_grotesque.className} text-3xl`}>
+                <h4
+                  className={`${darker_grotesque.className} text-2xl xl:text-3xl`}>
                   {feature.title}
                 </h4>
               </CardHeader>
