@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 import { Darker_Grotesque } from "next/font/google";
 import {
   Navbar,
@@ -21,6 +22,7 @@ const darker_grotesque = Darker_Grotesque({
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const router = useRouter();
 
   const nav_items = [
     { name: "Product", route: "/product" },
@@ -82,9 +84,11 @@ export default function NavBar() {
       <NavbarContent justify="end">
         <NavbarItem>
           <Button
-            as={Link}
             className={`${darker_grotesque.className} rounded-full  text-lg lg:text-xl  text-center align-text-top lg:px-12 xl:px-16 py-2`}
-            href="#"
+            onClick={() => {
+              // console.log("hello");
+              router.push("/Login");
+            }}
             variant="bordered">
             Log in
           </Button>
