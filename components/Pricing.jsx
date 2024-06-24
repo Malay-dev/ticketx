@@ -83,7 +83,7 @@ const Pricing = () => {
               </ul>
               <Button
                 variant={"bordered"}
-                className={`${darker_grotesque_semibold.className} text-xl mt-8`}>
+                className={`${darker_grotesque_semibold.className} border-2 rounded text-xl mt-8`}>
                 Get Started
               </Button>
             </CardBody>
@@ -147,7 +147,7 @@ const Pricing = () => {
               </ul>
               <Button
                 variant={"solid"}
-                className={`${darker_grotesque_semibold.className} text-white bg-black text-xl mt-8`}>
+                className={`${darker_grotesque_semibold.className} text-white bg-black rounded text-xl mt-8`}>
                 Try for free
               </Button>
             </CardBody>
@@ -211,7 +211,7 @@ const Pricing = () => {
               </ul>
               <Button
                 variant={"bordered"}
-                className={`${darker_grotesque_semibold.className} text-xl mt-8`}>
+                className={`${darker_grotesque_semibold.className} border-2 rounded text-xl mt-8`}>
                 Try for free
               </Button>
             </CardBody>

@@ -11,8 +11,8 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 const darker_grotesque = Darker_Grotesque({
   weight: "700",
@@ -84,12 +84,12 @@ export default function NavBar() {
       <NavbarContent justify="end">
         <NavbarItem>
           <Button
-            className={`${darker_grotesque.className} rounded-full  text-lg lg:text-xl  text-center align-text-top lg:px-12 xl:px-16 py-2`}
+            className={`${darker_grotesque.className} rounded-full  text-lg lg:text-xl border text-center align-text-top lg:px-12 xl:px-16 py-2 bg-[#FBFFEF]`}
             onClick={() => {
               // console.log("hello");
               router.push("/Login");
             }}
-            variant="bordered">
+            variant="solid">
             Log in
           </Button>
         </NavbarItem>

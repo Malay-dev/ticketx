@@ -42,12 +42,12 @@ const Contact = () => {
             <div className="flex mt-1">
               <Button
                 variant="bordered"
-                className={`${darker_grotesque.className} h-16 rounded-full w-full text-2xl tracking-wider`}>
+                className={`${darker_grotesque.className} h-16 rounded-full border-2	 w-full text-2xl tracking-wider`}>
                 Book a demo
               </Button>
               <Button
                 variant="bordered"
-                className={`${darker_grotesque.className} h-16  rounded-full w-full text-2xl tracking-wider`}>
+                className={`${darker_grotesque.className} h-16  rounded-full border-2	  w-full text-2xl tracking-wider`}>
                 {"Let's talk"}
               </Button>
             </div>
